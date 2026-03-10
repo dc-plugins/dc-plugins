@@ -30,7 +30,7 @@ dc-plugins/           ← This umbrella repo (org profile)
 | `SSH_PRIVATE_KEY` | Contents of `Private.pem` |
 | `SSH_HOST` | `linux195.unoeuro.com` |
 | `SSH_USER` | `dampcig.dk` |
-| `DEPLOY_PATH` | `/var/www/dampcig.dk/public_html/wp-content/plugins/` |
+| `DEPLOY_PATH` | `/var/www/dampcig.dk/public_html/wp-content/plugins` |
 
 ---
 

@@ -27,17 +27,9 @@ dc-plugins/              ← This umbrella repo
 └── dc-webp-converter/   ← github.com/dc-plugins/dc-webp-converter
 ```
 
-## Shared CI/CD
+## CI/CD
 
-All repos share org-level variables for deployment:
-
-| Variable | Value |
-|----------|-------|
-| `SSH_HOST` | `linux195.unoeuro.com` |
-| `SSH_USER` | `dampcig.dk` |
-| `DEPLOY_PATH` | `/var/www/dampcig.dk/public_html/wp-content/plugins/` |
-
-Each repo holds its own `SSH_PRIVATE_KEY` secret (ED25519, no passphrase).
+All repos deploy automatically on push to `main` using shared org-level variables and per-repo SSH secrets stored in GitHub Actions — no credentials are stored in code.
 
 ---
 
